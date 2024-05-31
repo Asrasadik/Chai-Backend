@@ -6,7 +6,9 @@ Learning Project and Notes for Backend with Chai ☕
 
 - generate gitignore: [Link](https://mrkandreev.name/snippets/gitignore-generator/#Node)
 
-nodemon: This just restarts server automatically after file is saved
+## Packages:
+
+### 1. nodemon: This just restarts server automatically after file is saved
 - it is dev dependency which means we can use this only in development environment.
 link: [NodeMon](https://www.npmjs.com/package/nodemon)
 ```
@@ -18,6 +20,7 @@ in above D means Dev dependency
     "dev": "nodemon src/index.js"
   },
 ```
+just extra thing learned 😊:
 command: 
 ```
 touch app.js constants.js index.js
@@ -31,12 +34,38 @@ mkdir db middlewares models routes utils
 ```
 ultils means utility such as file uplodad, mail. 
 
-### Npm Prettier: [Link](https://www.npmjs.com/package/prettier)
+### 2. Npm Prettier: [Link](https://www.npmjs.com/package/prettier)
 to make consistency throughout project its best while working in team.
 its a dev dependency
 ```
 npm i -D prettier
 ```
+### 3. DotENV
+### 4. Express
+### 5. Mongoose
+```
+npm i mongoose express dotenv
+```
+## DB Connection:
+MongoDB Atlas is used here.
+
+Some best pratices listed below:
+
+- while connecting to databse there are chances of errors so always wrap in ```try catch block or promise```.
+- "Database is always in another continent"😁. 
+- which means when ever communicating with database it takes time.so add ```async await```. 
+
+## async await:
+```
+;(async()=>{})() //semicolon is goo to have to 
+```
+below code to allow experminatal feature
+```
+"scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+```
+
 
 
 
