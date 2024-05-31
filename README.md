@@ -4,6 +4,8 @@ Learning Project and Notes for Backend with Chai ☕
 ## Links: 
 - [Model Link](https://app.eraser.io/workspace/71R8aofZoj3QF4f1JKdK) --> Made with Eraser.io
 
+- generate gitignore: [Link](https://mrkandreev.name/snippets/gitignore-generator/#Node)
+
 nodemon: This just restarts server automatically after file is saved
 - it is dev dependency which means we can use this only in development environment.
 link: [NodeMon](https://www.npmjs.com/package/nodemon)
@@ -27,6 +29,16 @@ if there is one request before server fulfill that request if we want to execute
 ```
 mkdir db middlewares models routes utils
 ```
-ultils means utility such as file uplodad, mail, 
+ultils means utility such as file uplodad, mail. 
+
+### Npm Prettier: [Link](https://www.npmjs.com/package/prettier)
+to make consistency throughout project its best while working in team.
+its a dev dependency
+```
+npm i -D prettier
+```
+
+
+
 
 
