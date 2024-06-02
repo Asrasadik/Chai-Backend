@@ -65,6 +65,15 @@ below code to allow experminatal feature
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
 ```
+## Express
+1. Request:<br/>
+To handle data recieved.
+some most used here will be:<br/>
+req.params(data from URL), <br/>
+req.body(here body-parser is used which will be implicilty given by express no need seperate package).
+req.cookies()
+2. Response
+To handle how to response
 
 
 

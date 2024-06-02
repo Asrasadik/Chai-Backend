@@ -2,10 +2,28 @@
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
 import mongoose from "mongoose";
+import express from "express";
 
 dotenv.config({
   path: "./env",
 });
+const app = express();
+const PORT = process.env.PORT || 8000;
+connectDB()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Listening at PORT: ${PORT}`);
+    });
+    app.on("error", (error) => {
+      //on error
+      console.log("ERROR:", error);
+      throw error;
+    });
+  })
+  .catch((err) => {
+    console.log("BD Connection failed:", err);
+  });
+
 /* console.log(process.env.MONGODB_URI);
 mongoose
   .connect(
@@ -18,8 +36,6 @@ mongoose
   .catch((err) => {
     console.error("Connection errorrr:", err);
   }); */
-
-connectDB();
 
 /*import express from "express";
 
