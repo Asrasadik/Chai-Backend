@@ -43,6 +43,9 @@ npm i -D prettier
 ### 3. DotENV
 ### 4. Express
 ### 5. Mongoose
+### 6. cookie-parser
+### 7. CORS
+
 ```
 npm i mongoose express dotenv
 ```
@@ -74,6 +77,15 @@ req.body(here body-parser is used which will be implicilty given by express no n
 req.cookies()
 2. Response
 To handle how to response
+
+3. most of the middlewares are used using app.use() or for any configuration settings.
+```
+npm i cookie-parser cors
+```
+4. multer is used for file uploading
+5. data from url- url may add some special characters( by url encoder) in between data like google.com/apple%20pie.
+6. cookie-parser: to access user's browerser's cookies from server and set its cookies(basically CURD operation). we can store secure cookies in user's browser. Those secure cookies only server can read and delete
+
 
 
 
