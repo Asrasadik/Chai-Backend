@@ -54,8 +54,9 @@ MongoDB Atlas is used here.
 
 Some best pratices listed below:
 
-- while connecting to databse there are chances of errors so always wrap in ```try catch block or promise```.
 - "Database is always in another continent"😁. 
+below are the mandatory things to do while connecting to db.
+- while connecting to databse there are chances of errors so always wrap in ```try catch block or promise```.
 - which means when ever communicating with database it takes time.so add ```async await```. 
 
 ## async await:
@@ -85,6 +86,17 @@ npm i cookie-parser cors
 4. multer is used for file uploading
 5. data from url- url may add some special characters( by url encoder) in between data like google.com/apple%20pie.
 6. cookie-parser: to access user's browerser's cookies from server and set its cookies(basically CURD operation). we can store secure cookies in user's browser. Those secure cookies only server can read and delete
+
+Higner order functions: which accepts functions as a parameter or return it. basically they treat functions as variable.
+
+## Node js api error: https://nodejs.org/api/errors.html#class-error
+To handle errors for promise/try catch to make it uniform that centain properties will be sent in response. 
+need class, inheretance, 
+
+## Modeling
+ for user id,when mongodb saves user it will generate ID with will be in bson data 
+ - https://www.mongodb.com/resources/basics/json-and-bson
+ 
 
 
 
